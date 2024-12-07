@@ -1,5 +1,38 @@
-<nav>
-  <a routerLink="/">Home</a>
-  <a routerLink="/movie" routerLinkActive="active">Movie</a>
-  <a routerLink="/about">About</a>
-</nav>
+<header
+  class="flex justify-center items-center shadow-md py-4 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[70px] tracking-wide relative z-50"
+>
+  <div
+    class="flex flex-wrap text-center items-center justify-center gap-5 w-full"
+  >
+    <div
+      id="collapseMenu"
+      class="max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50"
+    >
+      <ul
+        class="lg:flex gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50"
+      >
+        <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
+          <a
+            routerLink="/"
+            class="hover:text-[#007bff] text-[#007bff] block font-semibold text-[15px]"
+            >Home</a
+          >
+        </li>
+        <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
+          <a
+            routerLink="/movie"
+            class="hover:text-[#007bff] text-[#007bff] block font-semibold text-[15px]"
+            >Movie</a
+          >
+        </li>
+        <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
+          <a
+            routerLink="/about"
+            class="hover:text-[#007bff] text-[#007bff] block font-semibold text-[15px]"
+            >About</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
