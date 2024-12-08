@@ -3,7 +3,9 @@
   <div
     class="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1 px-4"
   >
-    <div class="shadow-md rounded-lg overflow-hidden w-[200px]">
+    <div
+      class="shadow-md rounded-lg overflow-hidden w-[200px] transform transition duration-500 hover:scale-125 hover:shadow-lg"
+    >
       <img
         [src]="cardData?.imageUrl"
         alt="Card Image"
@@ -17,7 +19,7 @@
           <p class="text-gray-400 font-light">{{ cardData?.year }}</p>
           <div class="flex items-center">
             <span class="w-1 h-1 bg-[#FF014C] rounded-full mr-2"></span>
-            <p class="text-gray-400 ffont-light">
+            <p class="text-gray-400 font-light">
               {{ cardData?.minute }} minutes
             </p>
           </div>
