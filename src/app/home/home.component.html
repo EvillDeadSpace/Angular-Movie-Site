@@ -1,1 +1,40 @@
-<p>home works!</p>
+<div class="grid grid-cols-2 items-center h-screen px-12">
+  <!-- Tekstualni dio -->
+  <div class="w-screen ml-32">
+    <h1 class="text-4xl font-bold text-white">FIND MOVIES</h1>
+    <h1
+      class="text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-900 to-red-500"
+    >
+      TV SHOWS AND MORE
+    </h1>
+    <p class="max-w-lg text-white">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+      cumque. Praesentium, eos odit? Quaerat dolorum porro veritatis, beatae
+      consequatur praesentium obcaecati corrupti enim officia optio ea alias
+      laborum esse rerum!
+    </p>
+    <div
+      class="border-2 border-blue-100 w-[200px] rounded-md flex items-center justify-center space-x-2 p-4 mt-4"
+    >
+      <mat-icon color="#ffffff" class="text-white">
+        <span class="material-symbols-outlined"> play_circle </span>
+      </mat-icon>
+      <p class="text-white">Watch Now</p>
+    </div>
+  </div>
+
+  <!-- Dio sa slikama -->
+  <div class="relative ml-2">
+    <img
+      src="https://images.pexels.com/photos/9807584/pexels-photo-9807584.jpeg"
+      class="w-[400px] h-[650px] relative z-10 rounded-xl"
+      alt="Logo"
+    />
+    <img
+      src="https://images.pexels.com/photos/29097935/pexels-photo-29097935/free-photo-of-apocalyptic-scene-with-gas-mask-in-armenia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      class="w-[400px] h-[650px] absolute top-[-100px] right-[250px] z-0 max-w-full rounded-lg"
+      alt="Logo Background"
+    />
+  </div>
+</div>
+<app-trending></app-trending>

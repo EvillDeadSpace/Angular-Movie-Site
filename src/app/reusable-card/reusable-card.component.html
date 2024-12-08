@@ -1,0 +1,28 @@
+<!-- reusable-card.component.html -->
+<div class="py-12">
+  <div
+    class="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1 px-4"
+  >
+    <div class="shadow-md rounded-lg overflow-hidden w-[200px]">
+      <img
+        [src]="cardData?.imageUrl"
+        alt="Card Image"
+        class="w-full h-72 object-cover"
+      />
+      <div class="mt-3">
+        <h2 class="text-xl font-semibold text-white">
+          {{ cardData?.title }}
+        </h2>
+        <div class="flex justify-between items-center mt-2">
+          <p class="text-gray-400 font-light">{{ cardData?.year }}</p>
+          <div class="flex items-center">
+            <span class="w-1 h-1 bg-[#FF014C] rounded-full mr-2"></span>
+            <p class="text-gray-400 ffont-light">
+              {{ cardData?.minute }} minutes
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
