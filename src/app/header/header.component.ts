@@ -2,23 +2,25 @@ import { CommonModule } from '@angular/common';
 import { DarkModeService } from './../services/dark-mode.service';
 import { Component, HostBinding, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
-
+import { OnInit } from '@angular/core';
 @Component({
   selector: 'app-header',
   imports: [RouterLink, CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
-export class HeaderComponent {
-  darkModeService: DarkModeService = inject(DarkModeService);
+export class HeaderComponent implements OnInit {
+  darkMode = false;
 
-  whiteMode = signal<boolean>(false);
+  constructor(private darkModeService: DarkModeService) {}
 
-  @HostBinding('class.dark') get mode() {
-    return this.whiteMode();
+  ngOnInit() {
+    this.darkModeService.darkMode$.subscribe((darkMode) => {
+      this.darkMode = darkMode;
+    });
   }
 
   toggleDarkMode() {
-    this.darkModeService.updateDarkMode();
+    this.darkModeService.toggleDarkMode();
   }
 }
