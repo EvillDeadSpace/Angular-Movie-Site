@@ -1,5 +1,5 @@
 <header
-  class="flex justify-center items-center shadow-md py-4 px-4 sm:px-10 bg-black font-[sans-serif] min-h-[70px] tracking-wide relative z-50"
+  class="flex justify-center dark:bg-white items-center shadow-md py-4 px-4 sm:px-10 font-[sans-serif] min-h-[70px] tracking-wide relative z-50"
 >
   <nav
     class="flex flex-wrap text-center items-center justify-center gap-5 w-full"
@@ -14,24 +14,62 @@
         <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
           <a
             routerLink="/"
-            class="hover:text-white text-[#C9C9C9] block font-semibold text-[15px]"
+            class="hover:text-white dark:hover:text-[#C40E61] text-[#C9C9C9] dark:text-[#444444] block font-semibold text-[15px]"
             >Home</a
           >
         </li>
-        <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
+        <li
+          class="max-lg:border-b dark:hover:text-[#C40E61] border-gray-300 max-lg:py-3 px-3"
+        >
           <a
             routerLink="/movie"
-            class="hover:text-white text-[#C9C9C9] block font-semibold text-[15px]"
+            class="hover:text-white dark:hover:text-[#C40E61] text-[#C9C9C9] dark:text-[#444444] block font-semibold text-[15px]"
             >Movie</a
           >
         </li>
         <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
           <a
             routerLink="/about"
-            class="hover:text-white text-[#C9C9C9] block font-semibold text-[15px]"
+            class="hover:text-white dark:hover:text-[#C40E61] text-[#C9C9C9] dark:text-[#444444] block font-semibold text-[15px]"
             >About</a
           >
         </li>
+        <div class="">
+          <button (click)="toggleDarkMode()">
+            <ng-container *ngIf="darkMode; else lightMode">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-black"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.752 15.002A9.718 9.718 0 0112.002 21c-5.385 0-9.75-4.365-9.75-9.75S6.617 1.5 12.002 1.5c.667 0 1.316.07 1.944.204a.75.75 0 01.287 1.342 7.218 7.218 0 00-2.733 5.754 7.218 7.218 0 005.754 2.733.75.75 0 011.342.287c.134.628.204 1.277.204 1.944z"
+                />
+              </svg>
+            </ng-container>
+            <ng-template #lightMode>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v1.5M12 19.5V21M4.219 4.219l1.061 1.061M17.719 17.719l1.061 1.061M3 12h1.5M19.5 12H21M4.219 19.781l1.061-1.061M17.719 6.281l1.061-1.061M12 7.5a4.5 4.5 0 100 9 4.5 4.5 0 000-9z"
+                />
+              </svg>
+            </ng-template>
+          </button>
+        </div>
       </ul>
     </div>
   </nav>

@@ -4,7 +4,7 @@
     class="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1 px-4"
   >
     <div
-      class="shadow-md rounded-lg overflow-hidden w-[200px] transform transition duration-500 hover:scale-125 hover:shadow-lg"
+      class="rounded-lg overflow-hidden w-[200px] transform transition duration-500 hover:scale-125 hover:shadow-lg"
     >
       <img
         [src]="cardData?.imageUrl"
@@ -12,14 +12,16 @@
         class="w-full h-72 object-cover"
       />
       <div class="mt-3">
-        <h2 class="text-xl font-semibold text-white">
+        <h2 class="text-xl font-semibold text-white ml-2 dark:text-[#030303]">
           {{ cardData?.title }}
         </h2>
-        <div class="flex justify-between items-center mt-2">
-          <p class="text-gray-400 font-light">{{ cardData?.year }}</p>
+        <div class="flex justify-between items-center mt-2 p-2">
+          <p class="text-gray-400 font-light dark:text-[#3B3B3B]">
+            {{ cardData?.year }}
+          </p>
           <div class="flex items-center">
             <span class="w-1 h-1 bg-[#FF014C] rounded-full mr-2"></span>
-            <p class="text-gray-400 font-light">
+            <p class="text-gray-400 font-light dark:[#3B3B3B]">
               {{ cardData?.minute }} minutes
             </p>
           </div>

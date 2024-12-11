@@ -8,13 +8,13 @@ export const cardData: ReusableCardData[] = [
     148
   ),
   new ReusableCardData(
-    'The Dark Knight',
+    'Interstellar',
     'https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10543523_p_v8_as.jpg',
     2008,
     152
   ),
   new ReusableCardData(
-    'Interstellar',
+    'The Dark Knight',
     'https://images.pexels.com/photos/29097935/pexels-photo-29097935/free-photo-of-apocalyptic-scene-with-gas-mask-in-armenia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     2014,
     169
