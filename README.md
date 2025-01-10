@@ -47,7 +47,7 @@ Welcome to the **Movie Team Web Application**! This web app is built with **Angu
 
 ## 📦 Features in Progress
 
-- ** 🔍 Enhanced movie search functionality
-- ** ⭐ Movie rating and review system
-- ** 🌍 Multi-language support
+- **🔍 Enhanced movie search functionality
+- **⭐ Movie rating and review system
+- **🌍 Multi-language support
 
