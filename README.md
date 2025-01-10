@@ -1,59 +1,45 @@
-# Projekat1
+# 🎬 Movie Team Web Application
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
+Welcome to the **Movie Team Web Application**! This web app is built with **Angular 19**, featuring **routing**, **reusable cards**, and styled with **Tailwind CSS**. It provides users with an intuitive platform to explore and manage a collection of movies. The app is live and hosted on **Netlify**.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Features
 
-```bash
-ng serve
-```
+- **Responsive design** styled with **Tailwind CSS**
+- **Routing** for navigating between different movie categories
+- **Reusable movie cards** for displaying movie details
+- **Smooth user experience** with dynamic content loading
+- **Movie management system** for adding and viewing movies
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🛠️ Tech Stack
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Frontend:** Angular 19
+- **CSS Framework:** Tailwind CSS
+- **Routing:** Angular Routing
+- **Hosting:** Netlify
+- **Live Demo:** [Check out the live app](https://movie-app-ipi.netlify.app)
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 💡 Installation
 
-```bash
-ng generate --help
-```
+### Prerequisites
 
-## Building
+- Install **Node.js** (latest version) - [Node.js Download](https://nodejs.org/)
 
-To build the project run:
+### Steps to Run Locally
 
-```bash
-ng build
-```
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/EvillDeadSpace/Angular-Movie-Site.git
+   ```
+   **Install dependencies Navigate to the project directory and install the required packages:
+   cd Angular-Movie-Site
+   npm install
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+   **Run the Angular app
+     Start the Angular development server:
+   ng serve
