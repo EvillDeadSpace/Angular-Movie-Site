@@ -43,3 +43,11 @@ Welcome to the **Movie Team Web Application**! This web app is built with **Angu
    **Run the Angular app
      Start the Angular development server:
    ng serve
+
+
+## 📦 Features in Progress
+
+- ** 🔍 Enhanced movie search functionality
+- ** ⭐ Movie rating and review system
+- ** 🌍 Multi-language support
+
